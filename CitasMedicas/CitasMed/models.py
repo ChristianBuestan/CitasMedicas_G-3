@@ -5,7 +5,7 @@ class Usuario(models.Model):
     usu_cedula = models.CharField(max_length=20, unique=True)
     usu_nombre_completo = models.CharField(max_length=255)
     usu_numero_telefono = models.CharField(max_length=20)
-    usu_correo_electronico = models.EmailField(unique=True)
+    usu_correo_electronico = models.TextField()
     usu_direccion = models.TextField()
 
 class PerfilAcceso(models.Model):
